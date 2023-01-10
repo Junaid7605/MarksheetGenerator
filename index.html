@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Marksheet Inputs -->
+    <section id="marksheet_generator">
+
+        <div id="form-container">
+            <p id="error-message"></p>
+            <form id="course-form">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Junaid Asghar" required>
+
+                <label for="studentNumber">Student Number</label>
+                <input type="text" pattern="[A-Z]{1}\d{4}" id="studentNumber" name="studentNumber" placeholder="A1234"
+                    required>
+
+                <label for="subjects">Subjects</label>
+                <input type="text" id="subjects" name="subjects" placeholder="Computer Science" required>
+                <label for="marks">Marks</label>
+                <input type="number" id="marks" min="0" max="100" name="marks" step="0.5" placeholder="0-100" required>
+
+                <button id="test_btn">Add Course</button>
+                <p id="added_course">Please enter your name, student number, subject name, and marks in the respective fields. Once you have entered all the required information, click the "Add Course" button to add the course to your marksheet. You can add as many courses as you like. When you are finished adding courses, click the "Generate Marksheet" button to generate your marksheet.
+                </p>
+
+                <input type="submit" id="generate_btn" value="Generate Marksheet">
+            </form>
+
+
+    </section>
+    <br><br><br><br>
+
+
+
+
+
+    <div class="marksheet">
+        <h1>Marksheet</h1>
+        <div class="student-info">
+            <div>Student Name: <span id="sheet_studentName">Junaid Asghar</span></div>
+            <div>Student Number: <span id="sheet_studentNumber">A1234</span></div>
+        </div>
+        <table id="marksheet_table">
+            <tr>
+                <th>Subject</th>
+                <th>Marks Obtained</th>
+                <th>Total Marks</th>
+                <th>Grade</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

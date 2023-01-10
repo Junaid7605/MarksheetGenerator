@@ -1,0 +1,159 @@
+ /* Style the form container */
+ #form-container {
+     width: 300px;
+     padding: 30px;
+     background-color: #f2f2f2;
+     margin: auto;
+     border-radius: 10px;
+ }
+
+ /* Style the form elements */
+ #form-container input[type="text"],
+ #form-container input[type="number"],
+ #form-container select {
+     width: 100%;
+     padding: 12px 4px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+ }
+
+ /* reduce size of subjects and marks field */
+ #form-container #subjects {
+     width: 125px;
+ }
+
+ #form-container #marks {
+     width: 55px;
+     padding-right: 0;
+     margin-left: 0;
+ }
+
+ /* info tab */
+ p#added_course {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+ /* Style the submit button */
+ #form-container input[type="submit"] {
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     width: 100%;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ /* Style the label elements */
+ #form-container label {
+     font-size: 16px;
+     font-weight: bold;
+ }
+
+ #error-message {
+    color: red;
+    font-weight: bold;
+  }
+
+
+  button#test_btn {
+    background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     width: 50%;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     display: block;
+     margin: auto;
+  }
+  
+  button#test_btn:hover, 
+  #form-container input[type="submit"]:hover {
+    background-color: #30ce35;
+  }
+  
+
+
+
+
+
+ /* Marksheet Sytling */
+
+ .marksheet {
+     width: 100%;
+     margin: 0 auto;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     padding: 20px;
+     font-family: Arial, sans-serif;
+     box-sizing: border-box;
+ }
+
+ .marksheet h1 {
+     text-align: center;
+     font-size: 24px;
+     margin-bottom: 20px;
+     color: #2b4267;
+ }
+
+ .marksheet .student-info {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 20px;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .marksheet .student-info #sheet_studentName,
+ .marksheet .student-info #sheet_studentNumber {
+    color: #1851ad;
+ }
+ 
+ 
+ .marksheet table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+
+ .marksheet th,
+ .marksheet td {
+     border: 1px solid #ccc;
+     padding: 10px;
+     text-align: left;
+ }
+
+ .marksheet th {
+     font-size: 16px;
+     font-weight: bold;
+     background-color: #eee;
+ }
+
+ .marksheet td {
+     font-size: 14px;
+ }
+
+ .marksheet td.obtained_marks,
+ .marksheet td.total_marks,
+ .marksheet td.marks,
+ .marksheet td.final_marksObtained,
+ .marksheet td.final_totalMarks {
+     text-align: right;
+ }
+
+ .marksheet td.grade,
+ .marksheet td.final_percentage {
+     text-align: center;
+ }
+
+ .marksheet .total-row td {
+     font-size: 18px;
+     font-weight: bold;
+ }
